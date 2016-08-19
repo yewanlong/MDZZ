@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_refresh_header_normal.xml",
+        "source": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\view_refresh_header_normal.xml"
+    },
+    {
+        "merged": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_refresh_header_stickiness.xml",
+        "source": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\view_refresh_header_stickiness.xml"
+    },
+    {
+        "merged": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_refresh_header_mooc_style.xml",
+        "source": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\view_refresh_header_mooc_style.xml"
+    },
+    {
+        "merged": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_normal_refresh_footer.xml",
+        "source": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\view_normal_refresh_footer.xml"
+    },
+    {
+        "merged": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_refresh_header_meituan.xml",
+        "source": "D:\\Android\\workspace\\YeWanLong\\pulllibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\view_refresh_header_meituan.xml"
+    }
+]

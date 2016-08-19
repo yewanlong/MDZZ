@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.bingoogolapple.refreshlayout.BGAStickyNavLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <com.yewanlong.widget.circle.ImageCycleView
+            android:id="@+id/cycleView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:mrl_rippleColor="?attr/colorPrimary"
+            app:mrl_rippleOverlay="true">
+
+            <LinearLayout
+                android:id="@+id/layout_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_hot_news" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="热点新闻"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_size_18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="今日头条"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_size_16sp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_arrow_right_light_grey" />
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@mipmap/list_divider"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+
+    </cn.bingoogolapple.refreshlayout.BGAStickyNavLayout>
+
+</cn.bingoogolapple.refreshlayout.BGARefreshLayout>

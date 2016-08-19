@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+>
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ripple"
+        app:mrl_rippleColor="?attr/colorPrimary"
+        app:mrl_rippleOverlay="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="标题"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_size_16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/from_and_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="中央人民政府网   09/07 05:17"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_size_14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_one"
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@mipmap/ic_friends_sends_pictures_no" />
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>

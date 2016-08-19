@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yewanlong">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name=".AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BrownTheme">
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.CreateLockActivity" />
+        <activity android:name=".ui.activity.CheckLockActivity" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityNoTranslucent" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.MemorandumActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.activity.WebViewActivity" />
+        <activity
+            android:name=".ui.activity.EditActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.NewsListActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.ImageSelectActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.BelleDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlankTheme"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.LangDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlankTheme"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.BelleFragmentActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.BelleListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlankTheme"
+            android:launchMode="singleTop" />
+        <service android:name=".ui.service.running.StepCounterService"
+            android:persistent="true"
+            android:priority="1000"/>
+        <receiver android:name=".ui.service.MainReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.ywl.step.destroy" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53cf893156240be58700f4fc"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="guangfang" />
+        <service android:name=".ui.service.apdate.UpdateService"/>
+    </application>
+
+</manifest>

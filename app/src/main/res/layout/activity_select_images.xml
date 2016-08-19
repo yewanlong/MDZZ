@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?colorAccent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_back"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/common_tab_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="相册"
+                android:drawableLeft="@mipmap/icon_left"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/center_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="140dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_20sp"/>
+
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:background="@drawable/common_tab_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18sp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/layout_bottom"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:horizontalSpacing="2dp"
+            android:listSelector="@color/white"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="2dp">
+        </GridView>
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_base"
+            android:padding="5dp">'
+
+            <TextView
+                android:id="@+id/preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="预览(0)"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_size_16sp"/>
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="确定(0/9)"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_size_16sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
